@@ -7,30 +7,44 @@
 </h1>
 
 <h3 align="center">
-	Command Line Version
+	Contact me to get full version from gitlab 
 	<br>
-	<a href="https://www.twitch.tv/dowright" target="_blank">
-		<img src="https://github.com/ProHackTech/DNX-FWALL-CMD/blob/master/Readme_Social/twitch.png" alt="DOWRIGHTTV" />
+	<a href="" target="_blank">
+		<img src="https://github.com/ProHackTech/DNX-FWALL-CMD/blob/master/Readme_Social/twitch.png" alt="nerosiar" />
 	</a>
 </h3>
 
 <h2>Before Running</h2>
 
-- [+] Edit data/config.json to reflect your system
+- [+] Edit /.idea to reflect your Development environment or create  
 
-- [+] Change environment variable in dnx_run.sh
+- [+] Change environment variable in ConsommiTounsi.iml
 
-- [+] Use dnx_run.sh to start the system
+- [+] Use wildfly-11.0 to start the system   ()
 
 <h2>Instructional Demo</h2>
 
 - NOTE: The front end is not included in public/foss version of application yet, but the funcionality of the system is the same.
-Edit json files accordingly to implement specific system controls, eg whitelist, blacklist, chat records, etc. CLI is in progress and some settings can be configured using it.
+Edit json files accordingly to implement specific system controls, eg Publication , whitelist, blacklist, chat room , etc. REST is in progress and some settings can be configured using it.
+The full version of the project is updated Beta-version on gitlab
 
-
+#### Forum 
+######### Post (publication) Management
+     * CRUD subject 
+     * test subject redandant
+     * Automatic deletion of subjects without interaction
+     * Topic Display
+     * Subject display more appropriate to the profile according to its research and interactions
+ ########## Comment Management 
+     * CRUD Comment
+     * Prohibited word dictionaries
+     * the most relevant comments
+   ########### Rating 
+     * subject evaluation
+     * comments evaluation (like / dislike / Emoji)
 * [x] The "seedling" role can view all public channels
 * [x] Move all users into the "seedling" role
-* [x] New users to the discord are placed into a "germinating" role
+* [x] New users to the App are placed into a "germinating" role
   * [x] All channels are hidden except for "welcome" and "introductions"
   * [x] Only have the ability to post in "introductions"
 * [x] To be moved into the "seedling" role
@@ -74,10 +88,9 @@ Edit json files accordingly to implement specific system controls, eg whitelist,
 ### Join a Bot to a server
 
 * Make a request in the browser to:
-  * https://discordapp.com/api/oauth2/authorize?client_id=12345&scope=bot&permissions=1
+  * localhost:9090/chatroom/${userToCommunicate}/BeginCommunication
 
-### discord.js docs/examples
+### chat soocket&websocket  docs/examples
 
-* https://discord.js.org/#/docs/main/stable/general/welcome
-* https://discordjs.guide/#/popular-topics/miscellaneous-examples
-
+* https://koor.fr/Java/TutorialJEE/jee_websocket_chat.wp
+* https://mvnrepository.com/artifact/io.socket/engine.io-server
