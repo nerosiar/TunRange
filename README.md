@@ -88,9 +88,37 @@ The full version of the project is updated Beta-version on gitlab
 ### Join a Bot to a server
 
 * Make a request in the browser to:
-  * localhost:9090/chatroom/${userToCommunicate}/BeginCommunication
+  * http://localhost:9090/chatroom/${userToCommunicate}/BeginCommunication
 
 ### chat soocket&websocket  docs/examples
 
 * https://koor.fr/Java/TutorialJEE/jee_websocket_chat.wp
 * https://mvnrepository.com/artifact/io.socket/engine.io-server
+
+
+
+## Infrastructure Security Design Overview
+  * Secure Low level Inrastructure :
+    - [x] Security of physical Premises 
+    - [x] Hardware Design and Provenance 
+    - [x] Secure  Boot Stack and Machine Identity
+  
+  * Secure Service Deployment 
+    - [x] Service Identity , Integrity and Isolation 
+    - [x] Inter-Service Access Management 
+    - [x] Encryption of Inter-Service Communication 
+    - [x] Access Management of End User Data 
+  
+  * Secure Data Storage 
+    - [x] Encryption At REST 
+    - [x] Delation of Data 
+  
+  * Secure Internet Communication 
+    - [x] Google Front-end Service 
+    - [x] Denial of Service (DoS) Protection 
+    - [x] User Authentication 
+  
+  * Operation Security 
+    - [x] Safe Software Development 
+    - [x] Reducing Insider Risk 
+    - [x] Intrusion Detection 
