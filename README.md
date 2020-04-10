@@ -14,24 +14,32 @@
 	</a>
 </h3>
 
+<h1> Sorry in this public repo you can't fin codes this just blank version and Progerrsion paper  </h1>
+
 <h2>Before Running</h2>
 
-- [+] Edit /.idea to reflect your Development environment or create  
-
-- [+] Change environment variable in ConsommiTounsi.iml
-
 - [+] Use wildfly-11.0 to start the system   ()
+
+- [+] Edit standalone.xml to reflect your Development environment And offset 1010 and access all ip adress    
+
+- [+] Change environment variable 
+
+
 
 <h2>Instructional Demo</h2>
 
 - NOTE: The front end is not included in public/foss version of application yet, but the funcionality of the system is the same.
-Edit json files accordingly to implement specific system controls, eg Publication , whitelist, blacklist, chat room , etc. REST is in progress and some settings can be configured using it.
+Edit json files accordingly to implement specific system controls, eg Publication , whitelist, comments , chat room , etc. REST is in progress and some settings can be configured using it.
 The full version of the project is updated Beta-version on gitlab
 
 #### Forum 
 ######### Post (publication) Management
      * CRUD subject 
+            ** [x] Create subject
+            ** [x] Read subject from database with rest access [user read subjects created by himself)
+            
      * test subject redandant
+        this feature is automatically in the database  
      * Automatic deletion of subjects without interaction
      * Topic Display
      * Subject display more appropriate to the profile according to its research and interactions
@@ -42,30 +50,31 @@ The full version of the project is updated Beta-version on gitlab
    ########### Rating 
      * subject evaluation
      * comments evaluation (like / dislike / Emoji)
-* [x] The "seedling" role can view all public channels
-* [x] Move all users into the "seedling" role
-* [x] New users to the App are placed into a "germinating" role
-  * [x] All channels are hidden except for "welcome" and "introductions"
-  * [x] Only have the ability to post in "introductions"
+
+
+
+* [ ] The "seedling" role can view all public channels
+* [  ] Move all users into the "seedling" role
+* [ ] New users to the App are placed into a "germinating" role
+  * [ ] All channels are hidden except for "welcome" and "introductions"
+  * [ ] Only have the ability to post in "introductions"
 * [x] To be moved into the "seedling" role
-  * [x] MUST emoji react the code of conduct post in "welcome"
-  * [x] MUST post an introduction in the "introductions" channel
-    * [x] Introduction must be at least 40 characters long.
-* [x] Watch code of conduct for emoji reactions and decide if we should move them to seedling role
+  * [ ] MUST emoji react the code of conduct post in "welcome"
+  * [ ] MUST post an introduction in the "introductions" channel
+    * [ ] Introduction must be at least 40 characters long.
+* [ ] Watch code of conduct for emoji reactions and decide if we should move them to seedling role
 
 ## TODO
-* [x] Setup eslint
+* [x] Setup eslint jee code 
 * [x] Refactor CONST variables to .env
   * [x] Create a config object, load from .env
-* [x] Refactor methods to use a local db like [nedb](https://github.com/louischatriot/nedb/)
+* [x] Create new user waith email settings SSO 
   * [x] Listen for new users
     * [x] Add to db with:
       * CodeOfConduct - false
       * Introduction - false
-  * [x] Listen for emoji reactions to COC message
-    * Update db
-  * [x] Listen for messages in introductions
-    * [x] Update db when a message recieved for new user with length > 40
+  * [x] Listen for messages in introductions    // Not working 
+    * [x] Update db when a message recieved for new user with length > 40 //there is some prob in Data access
 * [ ] ON startup
   * [x] Add all germinating users to the db
     * [x] Include COC
@@ -100,10 +109,9 @@ The full version of the project is updated Beta-version on gitlab
 ## Infrastructure Security Design Overview
   * Secure Low level Inrastructure :
     - [x] Security of physical Premises 
-    - [x] Hardware Design and Provenance 
-    - [x] Secure  Boot Stack and Machine Identity
+    - [x] Secure  Boot Stack and Machine Identity ---> both on JavaEE code 
   
-  * Secure Service Deployment 
+  * Secure Service Deployment //configuration of standalone.xml security issues
     - [x] Service Identity , Integrity and Isolation 
     - [x] Inter-Service Access Management 
     - [x] Encryption of Inter-Service Communication 
@@ -114,11 +122,11 @@ The full version of the project is updated Beta-version on gitlab
     - [x] Delation of Data 
   
   * Secure Internet Communication 
-    - [x] Google Front-end Service 
-    - [x] Denial of Service (DoS) Protection 
-    - [x] User Authentication 
+    - [x] Google Front-end Service for mail access and verification 
+    - [ ] Denial of Service (DoS) Protection // wildfly server non-support configuration 
+    - [x] User Authentication // done with double hash code (base64) and encryption
   
   * Operation Security 
-    - [x] Safe Software Development 
-    - [x] Reducing Insider Risk 
-    - [x] Intrusion Detection 
+    - [x] Safe Software Development (eclipse plugin ) 
+    - [x] Reducing Insider Risk (eclise plugin )
+    - [x] Intrusion Detection plugin eclipse for server deployment 
